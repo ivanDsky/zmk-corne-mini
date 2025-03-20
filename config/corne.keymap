@@ -160,21 +160,12 @@
     keymap {
         compatible = "zmk,keymap";
 
-        BASE {
+        BASE_WIN {
             bindings = <
-&trans  &kp Q  &kp W  &kp F    &kp P    &kp G        &kp J      &kp L          &kp U      &kp Y    &kp SEMI  &trans
-&trans  &kp A  &kp R  &kp S    &kp T    &kp D        &kp H      &kp N          &kp E      &kp I    &kp O     &trans
-&trans  &kp Z  &kp X  &kp C    &kp V    &kp B        &kp K      &kp M          &kp COMMA  &kp DOT  &kp FSLH  &trans
-                      &kp ESC  &kp TAB  &kp SPACE    &kp ENTER  &kp BACKSPACE  &kp DEL
-            >;
-        };
-
-        layer_1 {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
+&trans  &kp Q       &kp W           &kp F             &kp P        &kp G        &kp J      &kp L          &kp U              &kp Y           &kp SEMI        &trans
+&trans  &hm LGUI A  &hm LEFT_ALT R  &hm LEFT_SHIFT S  &hm LCTRL T  &kp D        &kp H      &hm RCTRL N    &hm RIGHT_SHIFT E  &hm LEFT_ALT I  &hm LEFT_GUI O  &trans
+&trans  &kp Z       &kp X           &kp C             &kp V        &kp B        &kp K      &kp M          &kp COMMA          &kp DOT         &kp FSLH        &trans
+                                    &kp ESC           &kp TAB      &kp SPACE    &kp ENTER  &kp BACKSPACE  &kp DEL
             >;
         };
     };
